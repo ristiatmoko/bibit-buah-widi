@@ -38,25 +38,25 @@
 
                 <div class="col-sm-4">
                     <?php
-                    
+
                     echo form_open('belanja/add');
                     echo form_hidden('id', $value->id_barang);
                     echo form_hidden('qty', 1);
                     echo form_hidden('price', $value->harga);
                     echo form_hidden('name', $value->nama_barang);
-                    echo form_hidden('redirect_page', str_replace('index.php,','',current_url()));
-        
+                    echo form_hidden('redirect_page', str_replace('index.php,', '', current_url()));
+
                     ?>
                     <div class="card bg-light">
                         <div class="card-body pt-0">
                             <div class="row">
-                            <div class="card-header text-muted border-bottom-0">
-                            <h><b><?= $value->nama_barang ?></b></h>
-                        </div>
+                                <div class="card-header text-muted border-bottom-0">
+                                    <h><b><?= $value->nama_barang ?></b></h>
+                                </div>
                                 <div class="col-12 text-center">
-                                <a href="<?= base_url('home/detail_barang/' . $value->id_barang) ?>" >
-                                    <img src="<?= base_url('assets/gambar/' . $value->gambar) ?>" width="300px" height="300px">
-                                </a>
+                                    <a href="<?= base_url('home/detail_barang/' . $value->id_barang) ?>">
+                                        <img src="<?= base_url('assets/gambar/' . $value->gambar) ?>" width="300px" height="300px">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -70,7 +70,7 @@
                                 <div class="col-sm-6">
                                     <div class="text-right">
                                         <a href="<?= base_url('home/detail_barang/' . $value->id_barang) ?>" class="btn btn-sm btn-primary ">
-                                            <h7>Detail</h7> 
+                                            <h7>Detail</h7>
                                         </a>
                                     </div>
                                 </div>
@@ -82,9 +82,12 @@
 
             <?php } ?>
 
+
         </div>
     </div>
 </div>
+
+
 
 <!-- SweetAlert2 -->
 <script src="<?= base_url() ?>template/plugins/sweetalert2/sweetalert2.min.js"></script>

@@ -1,13 +1,13 @@
  <!-- Navbar -->
- 
+
 
  <nav class="main-header navbar navbar-expand-md navbar-light navbar-white sticky-top">
-    
+
      <div class="container">
          <a href="<?= base_url() ?>" class="navbar-brand">
              <i class="fas fa-store"></i></i>
-             <span class="brand-text font-weight-light"><b>Konkrite Market</b></span>
-             
+             <span class="brand-text font-weight-light"><b>Bibit Buah Widi</b></span>
+
          </a>
 
          <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@
                  <li class="nav-item">
                      <a href="<?= base_url('home/kontak') ?>" class="nav-link">Kontak</a>
                  </li>
-    
+
              </ul>
 
          </div>
@@ -39,9 +39,9 @@
              <li class="nav-item">
                  <?php if ($this->session->userdata('email') == "") { ?>
 
-                    <a class="nav-link" href="<?= base_url('pelanggan/login') ?>">
+                     <a class="nav-link" href="<?= base_url('pelanggan/login') ?>">
                          <span class="brand-text font-weight-light">Login/Register</span>
-                    </a>
+                     </a>
                  <?php } else { ?>
 
                      <a class="nav-link" data-toggle="dropdown" href="#">
@@ -154,15 +154,14 @@
          <div class="container">
 
 
-<style>
-
-{
-    list-style-type: none;
-    /* background-color: chocolate; */
-    overflow: hidden;
-    top: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-}
-</style>        
+             <style>
+                 {
+                     list-style-type: none;
+                     /* background-color: chocolate; */
+                     overflow: hidden;
+                     top: 0;
+                     position: fixed;
+                     width: 100%;
+                     z-index: 1;
+                 }
+             </style>

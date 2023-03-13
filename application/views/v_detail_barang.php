@@ -43,18 +43,18 @@
                             <h6>Pilih Ukuran : </h6>
                             <div class="col-sm-2">
                                 <select name="ukuran" class="form-control">
-                                <?php if ($barang->stok_s > 0): ?>
-                                    <option value="S">S</option>
-                                <?php endif; ?>
-                                <?php if ($barang->stok_m > 0): ?>
-                                    <option value="M">M</option>
-                                <?php endif; ?>
-                                <?php if ($barang->stok_l > 0): ?>
-                                    <option value="L">L</option>
-                                <?php endif; ?>
-                                <?php if ($barang->stok_xl > 0): ?>
-                                    <option value="XL">XL</option>
-                                <?php endif; ?>
+                                    <?php if ($barang->stok_s > 0) : ?>
+                                        <option value="S">S</option>
+                                    <?php endif; ?>
+                                    <?php if ($barang->stok_m > 0) : ?>
+                                        <option value="M">M</option>
+                                    <?php endif; ?>
+                                    <?php if ($barang->stok_l > 0) : ?>
+                                        <option value="L">L</option>
+                                    <?php endif; ?>
+                                    <?php if ($barang->stok_xl > 0) : ?>
+                                        <option value="XL">XL</option>
+                                    <?php endif; ?>
                                 </select>
                             </div>
                             <div class="col-sm-4">
@@ -69,19 +69,19 @@
                                 <h4 class="badge badge-warning">Stok Size S : <?= $barang->stok_s ?> | Stok Size M : <?= $barang->stok_m ?> | Stok Size L : <?= $barang->stok_l ?> | Stok Size XL : <?= $barang->stok_xl ?></h4>
                             </div><br />
                         </div>
-						
+
                     </div>
-                        <?php echo form_close() ?>
-					    <?php if($this->session->flashdata('success')): ?>
-						    <div class="alert alert-primary">
-						    <?= $this->session->flashdata('success') ?>
-						    </div>
-					    <?php endif; ?>
-					    <?php if($this->session->flashdata('error')): ?>
-					    <div class="alert alert-danger">
-						    <?= $this->session->flashdata('error') ?>
-					</div>
-					    <?php endif; ?>
+                    <?php echo form_close() ?>
+                    <?php if ($this->session->flashdata('success')) : ?>
+                        <div class="alert alert-primary">
+                            <?= $this->session->flashdata('success') ?>
+                        </div>
+                    <?php endif; ?>
+                    <?php if ($this->session->flashdata('error')) : ?>
+                        <div class="alert alert-danger">
+                            <?= $this->session->flashdata('error') ?>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -96,4 +96,3 @@
     <script src="<?= base_url() ?>template/plugins/sweetalert2/sweetalert2.min.js"></script>
     <script type="text/javascript">
     </script>
-	
